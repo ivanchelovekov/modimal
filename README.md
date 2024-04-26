@@ -1,4 +1,4 @@
-## Home page of the clothing store "3legant E-Commerce"
+## Home page of the clothing store "Modimal"
 
 The following was used during creation:
 - HTML
