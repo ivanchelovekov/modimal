@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>modimal</title>
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-MediumItalic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+  <script>
+    function toggleActiveClass(button) {
+      button.classList.toggle('active');
+    }
+  </script>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <section class="top-info">
+  <h5 class="visually-hidden">Info</h5>
+  <div class="container top-info__container">
+    <p>Enjoy Free Shipping On All Orders</p>
+  </div>
+</section>
+
+    <header class="header">
+  <div class="container header__container">
+    <div class="header__logo logo">
+      <a class="logo__link" href="#">
+        <img class="logo__img" src="img/icons/logo.svg" alt="Logo">
+      </a>
+    </div>
+    <nav class="nav" title="Navigation">
+      <ul class="list-reset nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Collection</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Modiweek</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Plus Size</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Sustainability</a>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="list-reset user__account user__account--left">
+      <li class="user__account-button">
+        <button class="btn-reset hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </button>
+      </li>
+      <li class="user__account-item">
+        <a class="user__account-link" href="#">
+          <svg>
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="user__account-item user__account-item--person">
+        <a class="user__account-link" href="#">
+          <svg>
+            <use xlink:href="img/sprite.svg#person"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <ul class="list-reset user__account">
+      <li class="user__account-item">
+        <a class="user__account-link" href="#">
+          <svg class="user__account-favorite">
+            <use xlink:href="img/sprite.svg#favorite"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="user__account-item">
+        <a class="user__account-link" href="#">
+          <svg>
+            <use xlink:href="img/sprite.svg#bag"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+<div id="MobileNav" class="mobile-nav">
+  <div class="mobile-nav__roll roll">
+    <ul class="list-reset roll__list">
+      <li class="roll__item">
+        <button class="btn-reset roll__item-btn">
+          <span class="roll__item-title">Collection</span>
+        </button>
+        <ul class="list-reset roll__item-links">
+          <li class="roll__item-link"><a href="#">Fashion</a></li>
+          <li class="roll__item-link"><a href="#">Last Year</a></li>
+          <li class="roll__item-link"><a href="#">All time best</a></li>
+          <li class="roll__item-link"><a href="#">Winter/summer</a></li>
+        </ul>
+      </li>
+      <li class="roll__item">
+        <button class="btn-reset roll__item-btn">
+          <span class="roll__item-title">new in</span>
+        </button>
+        <ul class="list-reset roll__item-links">
+          <li class="roll__item-link"><a href="#">shop all</a></li>
+          <li class="roll__item-link"><a href="#">tops &amp; blouses</a></li>
+          <li class="roll__item-link"><a href="#">tees</a></li>
+          <li class="roll__item-link"><a href="#">pants</a></li>
+          <li class="roll__item-link"><a href="#">jackets &amp; outwears</a></li>
+          <li class="roll__item-link"><a href="#">pullovers</a></li>
+          <li class="roll__item-link"><a href="#">dresses &amp; jumpsuits</a></li>
+          <li class="roll__item-link"><a href="#">short &amp; skirts</a></li>
+        </ul>
+      </li>
+      <li class="roll__item">
+        <button class="btn-reset roll__item-btn">
+          <span class="roll__item-title">modiweek</span>
+        </button>
+        <ul class="list-reset roll__item-links">
+          <li class="roll__item-link"><a href="#">shop all</a></li>
+          <li class="roll__item-link"><a href="#">tops &amp; blouses</a></li>
+          <li class="roll__item-link"><a href="#">tees</a></li>
+          <li class="roll__item-link"><a href="#">pants</a></li>
+          <li class="roll__item-link"><a href="#">jackets &amp; outwears</a></li>
+          <li class="roll__item-link"><a href="#">pullovers</a></li>
+          <li class="roll__item-link"><a href="#">dresses &amp; jumpsuits</a></li>
+          <li class="roll__item-link"><a href="#">short &amp; skirts</a></li>
+        </ul>
+      </li>
+      <li class="roll__item">
+        <button class="btn-reset roll__item-btn">
+          <span class="roll__item-title">plus size</span>
+        </button>
+        <ul class="list-reset roll__item-links">
+          <li class="roll__item-link"><a href="#">shop all</a></li>
+          <li class="roll__item-link"><a href="#">tops &amp; blouses</a></li>
+          <li class="roll__item-link"><a href="#">tees</a></li>
+          <li class="roll__item-link"><a href="#">pants</a></li>
+          <li class="roll__item-link"><a href="#">jackets &amp; outwears</a></li>
+          <li class="roll__item-link"><a href="#">pullovers</a></li>
+          <li class="roll__item-link"><a href="#">dresses &amp; jumpsuits</a></li>
+          <li class="roll__item-link"><a href="#">short &amp; skirts</a></li>
+        </ul>
+      </li>
+      <li class="roll__item">
+        <button class="btn-reset roll__item-btn">
+          <span class="roll__item-title">sustainability</span>
+        </button>
+        <ul class="list-reset roll__item-links">
+          <li class="roll__item-link"><a href="#">mission</a></li>
+          <li class="roll__item-link"><a href="#">processing</a></li>
+          <li class="roll__item-link"><a href="#">materials</a></li>
+          <li class="roll__item-link"><a href="#">packaging</a></li>
+          <li class="roll__item-link"><a href="#">product care</a></li>
+          <li class="roll__item-link"><a href="#">our suppliers</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="mobile-nav__btns">
+    <a class="mobile-nav__btn" href="#!">
+      <img loading="lazy" src="img/icons/person.svg" class="mobile-nav__btn-img" width="16" height="18" alt="person">
+      Log In
+    </a>
+    <a class="mobile-nav__btn" href="#!">Create Account</a>
+  </div>
+</div>
+
+    <main class="main">
+      <section class="hero">
+  <div class="container hero__container">
+    <div class="hero__content">
+      <h1 class="hero__title">Elegance in simplicity, Earth’s harmony</h1>
+      <div class="hero__button">
+        <a class="hero__btn btn" href="#">New In</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="bestseller">
+  <div class="container">
+    <div class="bestseller__header">
+      <h2 class="bestseller__title section-title">Best Sellers</h2>
+      <div class="bestseller__button">
+        <a class="bestseller__link" href="#">View All</a>
+      </div>
+    </div>
+    <div class="swiper bestseller__swiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+  <article class="card">
+    <div class="card__fav-button">
+      <button class="btn-reset card__fav-btn" onclick="toggleActiveClass(this)">
+        <svg class="user__account-favorite">
+          <use xlink:href="img/sprite.svg#favorite"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="card__image">
+      <picture>
+        <!-- WebP source for standard display (1x) -->
+        <source srcset="img/best/best-01.webp" type="image/webp">
+        <!-- Retina display (2x) source -->
+        <source srcset="img/best/best-01@2x.webp 2x" type="image/webp">
+        <!-- Fallback for browsers that don't support picture element -->
+        <img loading="lazy" src="img/best/best-01.jpg" srcset="img/best/best-01@2x.jpg 2x" class="card__img"
+          width="392" height="438" alt="image">
+      </picture>
+    </div>
+    <div class="card__content">
+      <h3 class="card__title"><a href="#">tailored stretch</a></h3>
+      <div class="card__cols">
+        <div class="card__descr">turn it up pants</div>
+        <div class="card__price">$180</div>
+      </div>
+      <ul class="list-reset card__colors">
+
+         <li class="card__color card__color--black">
+          </li>
+           <li class="card__color card__color--blue">
+          </li>
+           <li class="card__color card__color--green">
+          </li>
+
+      </ul>
+    </div>
+  </article>
+</div>
+<div class="swiper-slide">
+  <article class="card">
+    <div class="card__fav-button">
+      <button class="btn-reset card__fav-btn" onclick="toggleActiveClass(this)">
+        <svg class="user__account-favorite">
+          <use xlink:href="img/sprite.svg#favorite"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="card__image">
+      <picture>
+        <!-- WebP source for standard display (1x) -->
+        <source srcset="img/best/best-02.webp" type="image/webp">
+        <!-- Retina display (2x) source -->
+        <source srcset="img/best/best-02@2x.webp 2x" type="image/webp">
+        <!-- Fallback for browsers that don't support picture element -->
+        <img loading="lazy" src="img/best/best-02.jpg" srcset="img/best/best-02@2x.jpg 2x" class="card__img"
+          width="392" height="438" alt="image">
+      </picture>
+    </div>
+    <div class="card__content">
+      <h3 class="card__title"><a href="#">Technical Silk</a></h3>
+      <div class="card__cols">
+        <div class="card__descr">Make A Splash</div>
+        <div class="card__price">$120</div>
+      </div>
+      <ul class="list-reset card__colors">
+
+         <li class="card__color card__color--olive">
+          </li>
+           <li class="card__color card__color--navy">
+          </li>
+           <li class="card__color card__color--black">
+          </li>
+
+      </ul>
+    </div>
+  </article>
+</div>
+<div class="swiper-slide">
+  <article class="card">
+    <div class="card__fav-button">
+      <button class="btn-reset card__fav-btn" onclick="toggleActiveClass(this)">
+        <svg class="user__account-favorite">
+          <use xlink:href="img/sprite.svg#favorite"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="card__image">
+      <picture>
+        <!-- WebP source for standard display (1x) -->
+        <source srcset="img/best/best-03.webp" type="image/webp">
+        <!-- Retina display (2x) source -->
+        <source srcset="img/best/best-03@2x.webp 2x" type="image/webp">
+        <!-- Fallback for browsers that don't support picture element -->
+        <img loading="lazy" src="img/best/best-03.jpg" srcset="img/best/best-03@2x.jpg 2x" class="card__img"
+          width="392" height="438" alt="image">
+      </picture>
+    </div>
+    <div class="card__content">
+      <h3 class="card__title"><a href="#">Cool Weave</a></h3>
+      <div class="card__cols">
+        <div class="card__descr">Anywhere Dress</div>
+        <div class="card__price">$210</div>
+      </div>
+      <ul class="list-reset card__colors">
+
+         <li class="card__color card__color--pink">
+          </li>
+           <li class="card__color card__color--olive">
+          </li>
+           <li class="card__color card__color--green">
+          </li>
+
+      </ul>
+    </div>
+  </article>
+</div>
+<div class="swiper-slide">
+  <article class="card">
+    <div class="card__fav-button">
+      <button class="btn-reset card__fav-btn" onclick="toggleActiveClass(this)">
+        <svg class="user__account-favorite">
+          <use xlink:href="img/sprite.svg#favorite"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="card__image">
+      <picture>
+        <!-- WebP source for standard display (1x) -->
+        <source srcset="img/best/best-04.webp" type="image/webp">
+        <!-- Retina display (2x) source -->
+        <source srcset="img/best/best-04@2x.webp 2x" type="image/webp">
+        <!-- Fallback for browsers that don't support picture element -->
+        <img loading="lazy" src="img/best/best-04.jpg" srcset="img/best/best-04@2x.jpg 2x" class="card__img"
+          width="392" height="438" alt="image">
+      </picture>
+    </div>
+    <div class="card__content">
+      <h3 class="card__title"><a href="#">Cool Dress</a></h3>
+      <div class="card__cols">
+        <div class="card__descr">Anywhere Dress</div>
+        <div class="card__price">$210</div>
+      </div>
+      <ul class="list-reset card__colors">
+
+         <li class="card__color card__color--white">
+          </li>
+           <li class="card__color card__color--black">
+          </li>
+           <li class="card__color card__color--green">
+          </li>
+
+      </ul>
+    </div>
+  </article>
+</div>
+<div class="swiper-slide">
+  <article class="card">
+    <div class="card__fav-button">
+      <button class="btn-reset card__fav-btn" onclick="toggleActiveClass(this)">
+        <svg class="user__account-favorite">
+          <use xlink:href="img/sprite.svg#favorite"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="card__image">
+      <picture>
+        <!-- WebP source for standard display (1x) -->
+        <source srcset="img/best/best-05.webp" type="image/webp">
+        <!-- Retina display (2x) source -->
+        <source srcset="img/best/best-05@2x.webp 2x" type="image/webp">
+        <!-- Fallback for browsers that don't support picture element -->
+        <img loading="lazy" src="img/best/best-05.jpg" srcset="img/best/best-05@2x.jpg 2x" class="card__img"
+          width="392" height="438" alt="image">
+      </picture>
+    </div>
+    <div class="card__content">
+      <h3 class="card__title"><a href="#">Cool Blause</a></h3>
+      <div class="card__cols">
+        <div class="card__descr">Anywhere Dress</div>
+        <div class="card__price">$210</div>
+      </div>
+      <ul class="list-reset card__colors">
+
+         <li class="card__color card__color--blue">
+          </li>
+           <li class="card__color card__color--white">
+          </li>
+           <li class="card__color card__color--green">
+          </li>
+
+      </ul>
+    </div>
+  </article>
+</div>
+<div class="swiper-slide">
+  <article class="card">
+    <div class="card__fav-button">
+      <button class="btn-reset card__fav-btn" onclick="toggleActiveClass(this)">
+        <svg class="user__account-favorite">
+          <use xlink:href="img/sprite.svg#favorite"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="card__image">
+      <picture>
+        <!-- WebP source for standard display (1x) -->
+        <source srcset="img/best/best-06.webp" type="image/webp">
+        <!-- Retina display (2x) source -->
+        <source srcset="img/best/best-06@2x.webp 2x" type="image/webp">
+        <!-- Fallback for browsers that don't support picture element -->
+        <img loading="lazy" src="img/best/best-06.jpg" srcset="img/best/best-06@2x.jpg 2x" class="card__img"
+          width="392" height="438" alt="image">
+      </picture>
+    </div>
+    <div class="card__content">
+      <h3 class="card__title"><a href="#">Summer Dress</a></h3>
+      <div class="card__cols">
+        <div class="card__descr">Anywhere Dress</div>
+        <div class="card__price">$210</div>
+      </div>
+      <ul class="list-reset card__colors">
+
+         <li class="card__color card__color--white">
+          </li>
+           <li class="card__color card__color--olive">
+          </li>
+           <li class="card__color card__color--green">
+          </li>
+
+      </ul>
+    </div>
+  </article>
+</div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+      <section class="collection">
+  <div class="container">
+    <h2 class="collection__title section-title">Collection</h2>
+    <div class="collection__cols">
+      <div class="collection__col">
+        <article class="collection-card">
+  <picture>
+    <source srcset="img/collection/collection-01.webp" type="image/webp">
+    <source srcset="img/collection/collection-01@2x.webp 2x" type="image/webp">
+    <img loading="lazy" src="img/collection/collection-01.jpg" srcset="img/collection/collection-01@2x.jpg 2x" class="collection-card__img" alt="image">
+  </picture>
+  <div class="collection-button">
+    <a class="collection-btn btn btn--wide" href="#!">Blouses</a>
+  </div>
+</article>
+<article class="collection-card">
+  <picture>
+    <source srcset="img/collection/collection-02.webp" type="image/webp">
+    <source srcset="img/collection/collection-02@2x.webp 2x" type="image/webp">
+    <img loading="lazy" src="img/collection/collection-02.jpg" srcset="img/collection/collection-02@2x.jpg 2x" class="collection-card__img" alt="image">
+  </picture>
+  <div class="collection-button">
+    <a class="collection-btn btn btn--wide" href="#!">Dresses</a>
+  </div>
+</article>
+
+      </div>
+      <div class="collection__col">
+        <article class="collection-card">
+  <picture>
+    <source srcset="img/collection/collection-03.webp" type="image/webp">
+    <source srcset="img/collection/collection-03@2x.webp 2x" type="image/webp">
+    <img loading="lazy" src="img/collection/collection-03.jpg" srcset="img/collection/collection-03@2x.jpg 2x" class="collection-card__img" alt="image">
+  </picture>
+  <div class="collection-button">
+    <a class="collection-btn btn btn--wide" href="#!">Pants</a>
+  </div>
+</article>
+<article class="collection-card">
+  <picture>
+    <source srcset="img/collection/collection-04.webp" type="image/webp">
+    <source srcset="img/collection/collection-04@2x.webp 2x" type="image/webp">
+    <img loading="lazy" src="img/collection/collection-04.jpg" srcset="img/collection/collection-04@2x.jpg 2x" class="collection-card__img" alt="image">
+  </picture>
+  <div class="collection-button">
+    <a class="collection-btn btn btn--wide" href="#!">Outwear</a>
+  </div>
+</article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="follow">
+  <div class="container">
+    <h2 class="follow__title section-title">Follow Us</h2>
+    <div class="follow__grid">
+      <picture>
+        <!-- WebP source for standard display (1x) -->
+        <source srcset="img/follow/follow-01.webp" type="image/webp">
+        <!-- Retina display (2x) source -->
+        <source srcset="img/follow/follow-01@2x.webp 2x" type="image/webp">
+        <!-- Fallback for browsers that don't support picture element -->
+        <img loading="lazy" src="img/follow/follow-01.jpg" srcset="img/follow/follow-01@2x.jpg 2x" class="follow__img"
+          alt="follow us">
+      </picture>
+      <picture>
+        <!-- WebP source for standard display (1x) -->
+        <source srcset="img/follow/follow-02.webp" type="image/webp">
+        <!-- Retina display (2x) source -->
+        <source srcset="img/follow/follow-02@2x.webp 2x" type="image/webp">
+        <!-- Fallback for browsers that don't support picture element -->
+        <img loading="lazy" src="img/follow/follow-02.jpg" srcset="img/follow/follow-02@2x.jpg 2x" class="follow__img"
+          alt="follow us">
+      </picture>
+      <picture>
+        <!-- WebP source for standard display (1x) -->
+        <source srcset="img/follow/follow-03.webp" type="image/webp">
+        <!-- Retina display (2x) source -->
+        <source srcset="img/follow/follow-03@2x.webp 2x" type="image/webp">
+        <!-- Fallback for browsers that don't support picture element -->
+        <img loading="lazy" src="img/follow/follow-03.jpg" srcset="img/follow/follow-03@2x.jpg 2x" class="follow__img"
+          alt="follow us">
+      </picture>
+      <picture>
+        <!-- WebP source for standard display (1x) -->
+        <source srcset="img/follow/follow-04.webp" type="image/webp">
+        <!-- Retina display (2x) source -->
+        <source srcset="img/follow/follow-04@2x.webp 2x" type="image/webp">
+        <!-- Fallback for browsers that don't support picture element -->
+        <img loading="lazy" src="img/follow/follow-04.jpg" srcset="img/follow/follow-04@2x.jpg 2x" class="follow__img"
+          alt="follow us">
+      </picture>
+      <picture>
+        <!-- WebP source for standard display (1x) -->
+        <source srcset="img/follow/follow-05.webp" type="image/webp">
+        <!-- Retina display (2x) source -->
+        <source srcset="img/follow/follow-05@2x.webp 2x" type="image/webp">
+        <!-- Fallback for browsers that don't support picture element -->
+        <img loading="lazy" src="img/follow/follow-05.jpg" srcset="img/follow/follow-05@2x.jpg 2x" class="follow__img"
+          alt="follow us">
+      </picture>
+    </div>
+  </div>
+</section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__copyright">
+      <p>2024 modimal. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>
